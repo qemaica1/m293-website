@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(New-Item -ItemType Directory -Path \"C:\\\\Dev\\\\Schule\\\\M293\\\\pages\" -Force)",
+      "PowerShell(Move-Item \"C:\\\\Dev\\\\Schule\\\\M293\\\\faehigkeiten.html\" \"C:\\\\Dev\\\\Schule\\\\M293\\\\pages\\\\\")",
+      "PowerShell(Move-Item \"C:\\\\Dev\\\\Schule\\\\M293\\\\portfolio.html\" \"C:\\\\Dev\\\\Schule\\\\M293\\\\pages\\\\\")",
+      "PowerShell(Move-Item \"C:\\\\Dev\\\\Schule\\\\M293\\\\kontakt.html\" \"C:\\\\Dev\\\\Schule\\\\M293\\\\pages\\\\\")",
+      "Bash(ffmpeg -i \"C:/Dev/Schule/M293/GBS-Video.mp4\" -ss 00:00:02 -vframes 1 \"C:/Dev/Schule/M293/video-thumb.jpg\" -y)",
+      "Bash(ffmpeg -i \"C:/Dev/Schule/M293/GBS-Video.mp4\" -ss 00:00:02 -vframes 1 -update 1 \"C:/Dev/Schule/M293/video-thumb.jpg\" -y)"
+    ]
+  }
+}

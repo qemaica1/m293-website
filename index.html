@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lian Walser – Informatiker EFZ, GBS St. Gallen. Persönliche Website mit Portfolio und Kontakt." />
+  <title>Lian Walser – Über mich</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">LW<span>·</span></a>
+      <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Über mich</a></li>
+        <li><a href="pages/faehigkeiten.html">Fähigkeiten</a></li>
+        <li><a href="pages/portfolio.html">Portfolio</a></li>
+        <li><a href="pages/kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <img src="profile.png" alt="Profilfoto Lian Walser" class="hero-avatar" width="160" height="160" loading="eager">
+      <div class="hero-content">
+        <h1 class="hero-name">Lian Walser</h1>
+        <p class="hero-role">Informatiker EFZ · GBS St. Gallen</p>
+        <p class="hero-bio">
+          Leidenschaft für Webentwicklung, moderne Technologien und kreative digitale Lösungen.
+          Ich lerne, baue und wachse – jeden Tag.
+        </p>
+        <div class="hero-tags">
+          <span class="tag tag-html">HTML</span>
+          <span class="tag tag-css">CSS</span>
+          <span class="tag tag-python">Python</span>
+          <span class="tag tag-git">Git</span>
+          <span class="tag tag-linux">Linux</span>
+        </div>
+        <a href="pages/kontakt.html" class="btn btn-primary">Kontakt aufnehmen →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Cards -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-card">
+          <h3>Über mich</h3>
+          <p>
+            Ich bin Informatik-Lernender im 3. Lehrjahr an der GBS St. Gallen.
+            Webentwicklung und moderne Technologien begeistern mich sehr.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>Ausbildung</h3>
+          <p class="about-card-title">Informatiker EFZ</p>
+          <p class="about-card-detail">GBS St. Gallen 2022–2026</p>
+          <p class="about-card-detail">Schwerpunkt: Applikationsentwicklung</p>
+        </div>
+
+        <div class="about-card">
+          <h3>Skills</h3>
+          <ul class="skill-dot-list">
+            <li><span class="skill-dot skill-dot--blue"></span>HTML</li>
+            <li><span class="skill-dot skill-dot--purple"></span>CSS</li>
+            <li><span class="skill-dot skill-dot--green"></span>Python</li>
+            <li><span class="skill-dot skill-dot--amber"></span>Git</li>
+            <li><span class="skill-dot skill-dot--red"></span>Linux</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section class="section video-section">
+    <div class="container">
+      <h2 class="section-title">GBS St. Gallen als Ausbildungsbetrieb</h2>
+      <p class="section-subtitle">Ein Einblick in die GBS als Ausbildungsbetrieb.</p>
+      <div class="video-wrapper">
+        <video controls preload="metadata">
+          <source src="GBS-Video.mp4" type="video/mp4">
+          Dein Browser unterstützt kein HTML5-Video.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Lian Walser · <a href="pages/kontakt.html">Kontakt</a> · <a href="pages/impressum.html">Impressum</a></p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links  = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+
+</body>
+</html>

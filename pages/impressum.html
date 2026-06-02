@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Impressum – Lian Walser, Informatiker EFZ GBS St. Gallen." />
+  <title>Lian Walser – Impressum</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">LW<span>·</span></a>
+      <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Über mich</a></li>
+        <li><a href="faehigkeiten.html">Fähigkeiten</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Impressum -->
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">Impressum</h1>
+      <p class="section-subtitle">Angaben gemäss gesetzlicher Informationspflicht.</p>
+
+      <div class="impressum-layout">
+
+        <div class="impressum-block">
+          <h2 class="impressum-heading">Verantwortlich für den Inhalt</h2>
+          <p>Lian Walser</p>
+          <p>Informatiker EFZ – GBS St. Gallen</p>
+          <p>St. Gallen, Schweiz</p>
+        </div>
+
+        <div class="impressum-block">
+          <h2 class="impressum-heading">Kontakt</h2>
+          <p>E-Mail: <a href="mailto:lianwalser6@gmail.com">lianwalser6@gmail.com</a></p>
+          <p>Telefon: +41 78 215 65 63</p>
+          <p>GitHub: <a href="https://github.com/qemaica1" target="_blank" rel="noopener noreferrer">github.com/qemaica1</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/hans-ruedi-8a636737b/" target="_blank" rel="noopener noreferrer">linkedin.com/in/hans-ruedi-8a636737b</a></p>
+        </div>
+
+        <div class="impressum-block">
+          <h2 class="impressum-heading">Zweck der Website</h2>
+          <p>
+            Diese Website wurde im Rahmen des Moduls M293 «Webauftritt erstellen»
+            an der Gewerblichen Berufsschule St. Gallen (GBS) als Schulprojekt erstellt.
+          </p>
+        </div>
+
+        <div class="impressum-block">
+          <h2 class="impressum-heading">Haftungsausschluss</h2>
+          <p>
+            Alle Inhalte dieser Website dienen ausschliesslich Ausbildungszwecken.
+            Trotz sorgfältiger Prüfung übernimmt der Autor keine Haftung für die
+            Richtigkeit, Vollständigkeit oder Aktualität der Inhalte.
+          </p>
+        </div>
+
+        <div class="impressum-block">
+          <h2 class="impressum-heading">Urheberrecht</h2>
+          <p>
+            © 2025 Lian Walser. Alle Rechte vorbehalten. Die Inhalte dieser Website
+            dürfen ohne ausdrückliche Genehmigung nicht vervielfältigt oder weitergegeben werden.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Lian Walser · <a href="kontakt.html">Kontakt</a> · <a href="impressum.html" class="active">Impressum</a></p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links  = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+
+</body>
+</html>

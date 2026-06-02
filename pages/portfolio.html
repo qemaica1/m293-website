@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio von Lian Walser – Projekte und Arbeitsproben." />
+  <title>Lian Walser – Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">LW<span>·</span></a>
+      <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Über mich</a></li>
+        <li><a href="faehigkeiten.html">Fähigkeiten</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Portfolio -->
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">Portfolio</h1>
+      <p class="section-subtitle">Meine abgeschlossenen Projekte und Arbeitsproben.</p>
+
+      <div class="portfolio-grid">
+
+        <article class="project-card">
+          <div class="project-img project-img--blue">Wetter-App</div>
+          <div class="project-body">
+            <h2 class="project-title">Wetter-App</h2>
+            <p class="project-tech">HTML · CSS · JavaScript</p>
+            <p class="project-desc">
+              Responsive Wetter-App mit OpenWeather API-Anbindung. Zeigt aktuelle
+              Wetterdaten und eine 5-Tage-Vorschau für beliebige Städte.
+            </p>
+            <a href="https://openweathermap.org" class="project-link" target="_blank" rel="noopener noreferrer">Ansehen →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img project-img--green">Quiz-Game</div>
+          <div class="project-body">
+            <h2 class="project-title">Quiz-Game</h2>
+            <p class="project-tech">HTML · CSS · JavaScript</p>
+            <p class="project-desc">
+              Interaktives Quiz-Game mit Punktesystem, Timer und verschiedenen
+              Kategorien. Vollständig im Browser, kein Backend nötig.
+            </p>
+            <a href="https://opentdb.com" class="project-link" target="_blank" rel="noopener noreferrer">Ansehen →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img project-img--orange">Portfolio v1</div>
+          <div class="project-body">
+            <h2 class="project-title">Portfolio v1</h2>
+            <p class="project-tech">HTML · CSS</p>
+            <p class="project-desc">
+              Erste Version meiner persönlichen Portfolio-Website. Einfaches,
+              responsives Layout mit eigenem CSS-Konzept ohne Frameworks.
+            </p>
+            <a href="https://github.com" class="project-link" target="_blank" rel="noopener noreferrer">Ansehen →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img project-img--purple">Datenbank-Tool</div>
+          <div class="project-body">
+            <h2 class="project-title">Datenbank-Tool</h2>
+            <p class="project-tech">Python · SQL · SQLite</p>
+            <p class="project-desc">
+              CLI-Tool zur Verwaltung von Datenbankeinträgen mit CRUD-Operationen,
+              Suchfunktion und Export als CSV.
+            </p>
+            <a href="https://www.sqlite.org" class="project-link" target="_blank" rel="noopener noreferrer">Ansehen →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img project-img--yellow">CSS Animations</div>
+          <div class="project-body">
+            <h2 class="project-title">CSS Animations</h2>
+            <p class="project-tech">CSS · HTML</p>
+            <p class="project-desc">
+              Sammlung von modernen CSS-Keyframe-Animationen und Micro-Interactions
+              für Buttons, Karten und Ladeanimationen.
+            </p>
+            <a href="https://animate.style" class="project-link" target="_blank" rel="noopener noreferrer">Ansehen →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img project-img--pink">REST API</div>
+          <div class="project-body">
+            <h2 class="project-title">REST API</h2>
+            <p class="project-tech">Python · Flask</p>
+            <p class="project-desc">
+              RESTful API mit Flask und JSON-Endpoints für eine einfache
+              Aufgabenverwaltung. Dokumentiert mit Swagger UI.
+            </p>
+            <a href="https://flask.palletsprojects.com" class="project-link" target="_blank" rel="noopener noreferrer">Ansehen →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Lian Walser · <a href="kontakt.html">Kontakt</a> · <a href="impressum.html">Impressum</a></p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links  = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+
+</body>
+</html>
